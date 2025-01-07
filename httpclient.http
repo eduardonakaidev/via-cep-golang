@@ -1,0 +1,8 @@
+
+### Health Check
+GET http://localhost:3000/
+
+### Fetch CEP Information
+GET http://localhost:3000/cep/85903200
+
+
