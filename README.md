@@ -66,7 +66,7 @@ This project is a simple HTTP server written in Go that allows users to fetch po
 ### Steps
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/cep-lookup-service.git
+   git clone https://github.com/eduardonakaidev/via-cep-golang.git
    cd cep-lookup-service
    ```
 2. Build the project:
