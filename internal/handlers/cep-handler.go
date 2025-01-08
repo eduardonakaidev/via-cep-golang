@@ -14,14 +14,17 @@ func SetupRoutes() *mux.Router {
 	router := mux.NewRouter()
 
 	// Health check route
-	router.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		w.Write([]byte("ping"))
-	})
+	router.HandleFunc("/", HealthHandler)
 
 	// CEP route
 	router.HandleFunc("/cep/{id}", GetCepHandler)
 
 	return router
+}
+
+// HealthHandler handle ping.
+func HealthHandler(w http.ResponseWriter, r *http.Request) {
+	w.Write([]byte("ping"))
 }
 
 // GetCepHandler handles requests to fetch CEP information.
